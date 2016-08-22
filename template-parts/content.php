@@ -6,14 +6,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="item-sizer">
-	<?php if ( has_post_thumbnail() && ( get_theme_mod( 'index_feat_image' ) != 1 ) ) : ?>
+	<?php if ( has_post_thumbnail() && ( get_theme_mod( 'index_feat_image' ) != 3 ) ) : ?>
 		<div class="entry-thumb">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('oria-small-thumb'); ?></a>		
 		</div>
 	<?php endif; ?>
 
 	<header class="entry-header blog-entry-header">
-		<?php if ( 'post' == get_post_type() && get_theme_mod('hide_meta_index') != 1 ) : ?>		
+		<?php if ( 'post' == get_post_type() && get_theme_mod('hide_meta_index') != 3 ) : ?>		
 		<div class="entry-data">
 			<?php oria_index_data(); ?>
 		</div>
